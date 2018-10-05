@@ -28,6 +28,7 @@ defaults:
     values:
       showMobileLink: true
       showDesktopLink: true
+      showInitial: "desktop"
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list

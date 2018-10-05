@@ -1,4 +1,5 @@
 ---
+title: "Desktop"
 layout: desktop
 showMobileLink: false
 mockups:
