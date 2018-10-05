@@ -1,0 +1,26 @@
+<div class="layout-selector">
+
+  <div id="bd_logo"></div>
+
+  <div id="dropdown">
+    <h1 class="section-title">Select design.</h1>
+
+    <select id="current-layout" class="current-layout">
+      {% for mockup in page.mockups %}
+        <option value="{{mockup.image}}">{{mockup.title}}</option>
+      {% endfor %}
+    </select>
+  </div>
+
+  <ul>
+    {% if page.showDesktopLink %}
+      <li><a href="/{{ page.path | replace: page.name, "desktop/" }}">
+        <img src="{{ "/assets/images/icon-desktop.png" | relative_url }}" /><br/><span>Desktop</span></a></li>
+    {% endif %}
+    {% if page.showMobileLink %}
+      <li><a href="/{{ page.path | replace: page.name, "mobile/" }}">
+        <img src="{{ "/assets/images/icon-mobile.png" | relative_url }}" /><br/><span>Mobile</span></a></li>
+    {% endif %}
+  </ul>
+
+</div>

@@ -1,0 +1,237 @@
+/*------------------------------------------------------------------------------
+BASE STYLES
+------------------------------------------------------------------------------*/
+* {margin:0; padding:0; outline: 0}
+.clr {background: none; clear: both; font-size: 0; height: 0; line-height: 0;}
+html{font-size:100%; -webkit-text-size-adjust:100%; -ms-text-size-adjust:100%;}
+
+body{
+	background:#fff;
+	font-size:14px;
+	font-size:0.875rem;
+	font-family:Arial, Helvetica, sans-serif;
+	line-height:1.5;
+}
+
+
+
+/*------------------------------------------------------------------------------
+LAYOUT
+------------------------------------------------------------------------------*/
+#bd_logo {
+	height: 60px;
+	width: 313px;
+	display: block;
+	float: left;
+	background-image: url("../images/logo-lurecreative.png");
+	background-repeat: no-repeat;
+	background-size: contain;
+	margin: 25px 0 0 10%;
+}
+.layout-selector{
+	background:#444;
+	padding:5px 10px;
+	font-weight:bold;
+	color: #fff;
+	text-align:center;
+	text-shadow:0 1px 0 #000;
+	font-size:16px;
+	height: 100px;
+}
+
+.layout-selector ul {
+	display: block;
+	float: right;
+	margin: 15px 10% 0 0;
+}
+
+.layout-selector ul li {
+	list-style-type: none;
+	display: inline-block;
+	text-decoration: none;
+	text-transform: uppercase;
+	width: 80px;
+}
+
+.layout-selector ul li a {
+	text-decoration: none;
+}
+
+.layout-selector ul li a span {
+	display: block;
+    text-align: center;
+    width: 130px;
+}
+
+#dropdown {
+	display: block;
+	float: left;
+	margin: 40px 0 0 10%;
+}
+
+.section-title{
+	font-size: 18px;
+	display:inline;
+	padding:0 15px 0 0;
+	font-weight:normal;
+}
+
+#current-layout{
+	padding:3px;
+}
+
+.layout-selector a{
+	width: 130px;
+	text-align: center;
+	display: block;
+	color: #fff;
+}
+
+.container{
+	overflow-y:scroll;
+	height:646px; /* For fixed navigation in mobile, subtract the height of all fixed navigation */
+	width:375px;
+	margin:0 auto;
+}
+
+.container img{
+	display:block;
+	margin:0;
+	padding:0;
+}
+
+.current-layout {
+	margin: 0 10px 0 0;
+}
+
+.device-links {
+	display: block;
+	float: left;
+    border-left: 1px solid #333333;
+    display: inline-block;
+    font-size: 12px;
+    height: 55px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.device-links img {
+    border: medium none;
+    margin: 0 0 -11px;
+    outline: medium none;
+}
+
+#nav-mobile-top {
+	height: 50px;
+	width: 375px;
+	position: relative;
+	left: 28px;
+	background-image: url(../images/nav-mobile-top.jpg);
+}
+/******* Fixed Mobile Navigation
+#nav-mobile-bottom {
+	height: 50px;
+	width: 375px;
+	position: relative;
+	left: 28px;
+	background-image: url(../images/nav-mobile-bottom.jpg);
+}
+End Fixed Mobile Navigation**********/
+
+/* IPHONE
+------------------------------------------*/
+#iphone{
+	width:431px;
+	margin:30px auto 0 auto;
+}
+
+.ip-header{
+	background:url(../images/iphone6-header.png);
+	height:129px;
+}
+
+.ip-body{
+	background:url(../images/iphone6-body.png);
+	height:646px;
+}
+
+.ip-footer{
+	background:url(../images/iphone6-footer.png);
+	height:110px;
+}
+
+/* IPAD
+------------------------------------------*/
+#iPad {
+    background: url("../images/ipad-body.jpg") no-repeat 0 0 transparent;
+    height: 1290px;
+    margin: 11px auto 0;
+    position: relative;
+    width: 1050px;
+}
+#iPad .container {
+    height: 1024px;/* subtract the height of any fixed navigation*/
+    left: 142px;
+    margin: 0 auto;
+    position: absolute;
+    top: 125px;
+    width: 768px;
+}
+/*********Fixed navigation tablet
+#nav-tablet {
+	height:100px;
+	width:768px;
+	margin: 0px auto;
+	background-image:url("../images/nav-tablet.jpg");
+	position: relative;
+	top: 125px;
+}
+****************/
+
+/* MACBOOK
+------------------------------------------*/
+
+#MacBook {
+	width: 100%;
+	height: auto;
+}
+#MacBook .container {
+	width: 1400px;
+	height: auto;
+}
+#MacBook .container img {
+	max-width: 1400px;
+	margin: 0 auto;
+}
+
+@media all and (min-width: 1400px) {
+
+#MacBook  {
+    background: url("../images/imac-body.jpg") no-repeat center top transparent;
+    height: 1490px;
+    margin: 11px auto 0;
+    text-align: center;
+    padding: 70px 0;
+}
+#MacBook .container {
+    height: 804px;/* subtract the height of any fixed navigation*/
+    margin: 0px auto;
+    width: 1400px;
+	background-color: #fff;
+}
+
+#nav-desktop {
+	height:50px;
+	width:1400px;
+	margin: 0px auto;
+	background-image:url(../images/nav-desktop.jpg);
+}
+
+
+}
+
+.page-content {
+	display: block;
+	max-width: 1200px;
+	padding: 2em 1em;
+	margin: 0 auto;
+}
