@@ -190,43 +190,48 @@ End Fixed Mobile Navigation**********/
 /* MACBOOK
 ------------------------------------------*/
 
-#MacBook {
-	width: 100%;
-	height: auto;
-}
-#MacBook .container {
-	width: 1400px;
-	height: auto;
-}
-#MacBook .container img {
-	max-width: 1400px;
-	margin: 0 auto;
+@media (max-width: 1399px) {
+	#MacBook {
+		background: url("../images/imac-body.jpg") no-repeat center top transparent;
+		background-size: 100%;
+		width: 1200px;
+		height: 1490px;
+		margin: 11px auto 0;
+		text-align: center;
+		padding: 70px 0;
+	}
+	#MacBook .container {
+		width: 900px;
+		height: 504px;/* subtract the height of any fixed navigation*/
+	}
+	#MacBook .container img {
+		max-width: 900px;
+		margin: 0 auto;
+	}
 }
 
 @media all and (min-width: 1400px) {
+	#MacBook  {
+	    background: url("../images/imac-body.jpg") no-repeat center top transparent;
+	    height: 1490px;
+			width: 100%;
+	    margin: 11px auto 0;
+	    text-align: center;
+	    padding: 70px 0;
+	}
+	#MacBook .container {
+	    height: 804px;/* subtract the height of any fixed navigation*/
+	    margin: 0px auto;
+	    width: 1400px;
+		background-color: #fff;
+	}
 
-#MacBook  {
-    background: url("../images/imac-body.jpg") no-repeat center top transparent;
-    height: 1490px;
-    margin: 11px auto 0;
-    text-align: center;
-    padding: 70px 0;
-}
-#MacBook .container {
-    height: 804px;/* subtract the height of any fixed navigation*/
-    margin: 0px auto;
-    width: 1400px;
-	background-color: #fff;
-}
-
-#nav-desktop {
-	height:50px;
-	width:1400px;
-	margin: 0px auto;
-	background-image:url(../images/nav-desktop.jpg);
-}
-
-
+	#nav-desktop {
+		height:50px;
+		width:1400px;
+		margin: 0px auto;
+		background-image:url(../images/nav-desktop.jpg);
+	}
 }
 
 .page-content {
